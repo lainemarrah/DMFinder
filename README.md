@@ -93,7 +93,7 @@ DMFinder produces two files:
    * **amplicon end**
    * **type** one of 2 types: *complete* double minute when the method correctly identified all DM amplicons connected in a cycle of structural variant (SV) breakpoints (a hallmark of DMs). Else, if the DM was partially identified, meaning that at least *m* (specified with --min_non_cyclic parameter) amplicons were discovered that were linearly connected by SV breakpoints , then we say that an *incomplete* double minute was discovered.
 
-All amplicons of *complete* DM, whose rows appeared adjacently in REPORT_FILE are connected to each other. Additionally, the first and the last amplicons of the double minutes of *compleate* type are also connected to each other.
+All amplicons of *complete* DM whose rows appeared adjacently in REPORT_FILE are connected to each other. Additionally, the first and the last amplicons of the double minutes of *complete* type are also connected to each other.
 
 
 # Publication
