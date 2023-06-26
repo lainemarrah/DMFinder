@@ -68,8 +68,7 @@ OPTIONS
 ```
 
 * **input_bam** -	This should be a coordinate-sorted bam file with an associated index file. The index filename should be your bam filename with ".bai" affixed to the end.
-* **sv** - This is a VCF format file that contains the structural variant breakpoints. **You must convert your structural variant breakpoint prediction files into VCF format to be read by DMFinder**. It is recommended to use BreakDancer to identify structural variants, and then use the script tools/breakdancer2vcf.py to convert the output to VCF format.
-* 	BreakDancer - https://github.com/genome/breakdancer 
+* **sv** - This is a VCF format file that contains the structural variant breakpoints. **You must convert your structural variant breakpoint prediction files into VCF format to be read by DMFinder**. It is recommended to use BreakDancer (https://github.com/genome/breakdancer) to identify structural variants, and then use the script tools/breakdancer2vcf.py to convert the output to VCF format.
 * **cn** - This is a BED format file that contains coordinates corresponding to copy number amplified segments. **DMFinder assumes these regions correspond to segments of copy number gain**.
 * **min_cyclic** - For circular (cyclic) sub-graphs, this is the minimum number of amplicons (vertices) that must exist for predicting a double minute. 
 * **min_non_cyclic** - For NON-circular sub-graphs, this is the minimum number of amplicons (vertices) that must exist for predicting double minute. Per algorithm 3, this is the smallest allowable weakly connected component that is allowed to predict a double minute.
